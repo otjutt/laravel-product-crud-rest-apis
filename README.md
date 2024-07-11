@@ -2,31 +2,37 @@
 
 ## Requirements
 
-```
-PHP 8.2
-MySQL
-```
+- PHP 8.2
+- MySQL
 
 # Installation
 
+Step 1: Clone code repository.
 ```
-# Clone code repository.
 git clone git@github.com:otjutt/laravel-product-crud-rest-apis.git
+```
 
-# Switch directory.
+Step 2: Switch directory.
+```
 cd laravel-product-crud-rest-apis;
+```
 
-# Create environment files.
-cp .env.example .env.testing;
-cp .env.example .env;
+Step 3: Create environment files.
+```
+cp .env.example .env.testing; cp .env.example .env;
+```
 
-# Composer install
-composer install --ignore-platform-reqs -vvv --profile --prefer-dist
-
-# Laravel Sail up.
+Step 4: Composer install
+```
+composer install --ignore-platform-reqs --profile --prefer-dist -vvv
+```
+Step 5: Laravel Sail up.
+```
 ./vendor/bin/sail up -d
+```
 
-# Run tests.
+Step 6: Run tests.
+```
 ./vendor/bin/sail artisan test
 ```
 
